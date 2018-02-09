@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group id="index" name="首页">
+        <bundle id="home" name="首页展示" class="com.joinsun.gaea.home.HomeBundle"/>
+    </group>
+    <group id="maintain" name="运维">
+        <bundle id="projectmanage" name="工程管理" class="com.joinsun.gaea.projectmanage.ProjectManageBundle"/>
+        <bundle id="formation" name="组段管理" class="com.joinsun.gaea.formation.FormationBundle"/>
+        <bundle id="coordinatemanage" name="坐标管理" class="com.joinsun.gaea.coordinatemanage.CoordinateManageBundle"/>
+        <bundle id="guide" name="导向管理" class="com.joinsun.gaea.guide.GuideBundle"/>
+        <bundle id="tbmlimit" name="预警设置" class="com.joinsun.gaea.tbmlimit.TbmLimitBundle"/>
+        <bundle id="monitor" name="监测管理" class="com.joinsun.gaea.monitor.MonitorBundle"/>
+        <bundle id="risk" name="风险管理" class="com.joinsun.gaea.risk.RiskBundle"/>
+        <bundle id="projectprogress" name="工程进度维护" class="com.joinsun.gaea.projectprogress.ProjectProgressBundle"/>
+        <bundle id="box" name="盒子管理" class="com.joinsun.gaea.box.BoxBundle"/>
+        <bundle id="tbmmanage" name="盾构管理" class="com.joinsun.gaea.tbmmanage.TbmManageBundle"/>
+        <bundle id="tbmtype" name="盾构类型" class="com.joinsun.gaea.tbmtype.TbmTypeBundle"/>
+        <bundle id="systype" name="盾构系统类型" class="com.joinsun.gaea.systype.SysTypeBundle"/>
+        <bundle id="convert" name="转换进度" class="com.joinsun.gaea.convert.ConvertBundle"/>
+        <bundle id="notice" name="系统公告" class="com.joinsun.gaea.notice.NoticeBundle"/>
+        <bundle id="dictionary" name="字典管理" class="com.joinsun.gaea.dictionary.DictionaryBundle"/>
+        <bundle id="unit" name="参数字段分类" class="com.joinsun.gaea.unit.UnitBundle"/>
+        <bundle id="geology" name="地质信息" class="com.joinsun.gaea.geology.GeologyBundle"/>
+        <bundle id="video" name="监控设置" class="com.joinsun.gaea.video.VideoBundle"/>
+        <bundle id="faultparammanage" name="参数故障管理" class="com.joinsun.gaea.faultparammanage.FaultParamManageBundle"/>
+    </group>
+    <group id="set" name="设置">
+        <bundle id="admin" name="用户管理" class="com.joinsun.gaea.admin.AdminBundle"/>
+        <bundle id="role" name="角色管理" class="com.joinsun.gaea.role.RoleBundle"/>
+        <bundle id="operational" name="操作记录" class="com.joinsun.gaea.operational.OperationalBundle"/>
+        <bundle id="contact" name="通讯录" class="com.joinsun.gaea.contact.ContactBundle"/>
+        <bundle id="dataauthority" name="数据权限" class="com.joinsun.gaea.dataauthority.DataAuthorityBundle"/>
+        <bundle id="call" name="呼叫管理" class="com.joinsun.gaea.call.CallBundle"/>
+        <bundle id="systeminfo" name="系统信息" class="com.joinsun.gaea.systeminfo.SystemInfoBundle"/>
+    </group>
+    <group id="synthesize" name="综合统计">
+        <bundle id="formationstatistics" name="组段统计分析"
+                class="com.joinsun.gaea.formationstatistics.FormationStatisticsBundle"/>
+        <bundle id="tbmstandingbook" name="盾构台账" class="com.joinsun.gaea.tbmstandingbook.TbmStandingBookBundle"/>
+        <bundle id="systemstandingbook" name="系统台账"
+                class="com.joinsun.gaea.systemstandingbook.SystemStandingBookBundle"/>
+    </group>
+    <group id="project" name="项目功能">
+        <bundle id="projectdoc" name="工程文档" class="com.joinsun.gaea.projectdoc.ProjectDocBundle"/>
+    </group>
+    <group id="segment" name="标段功能">
+        <bundle id="segment" hidden="true" name="标段展示" class="com.joinsun.gaea.segment.SegmentBundle"/>
+        <bundle id="segmentdoc" name="标段文档" class="com.joinsun.gaea.segmentdoc.SegmentDocBundle"/>
+        <bundle id="monitorshow" name="监测信息" class="com.joinsun.gaea.monitorshow.MonitorShowBundle"/>
+        <bundle id="segmentprogress" name="进度图" class="com.joinsun.gaea.segmentprogress.SegmentProgressBundle"/>
+        <bundle id="segmentprofile" name="剖面图" class="com.joinsun.gaea.segmentprofile.SegmentProfileBundle"/>
+        <bundle id="segmentimg" name="标段图片" class="com.joinsun.gaea.segmentimg.SegmentImgBundle"/>
+    </group>
+    <group id="section" name="区间功能">
+    </group>
+    <group id="line" name="线路功能">
+        <!--为了能够进行权限控制，所以增加line,其他节点一样-->
+        <bundle id="line" hidden="true" name="线路展示" class="com.joinsun.gaea.line.LineBundle"/>
+        <bundle id="progressstatistics" hidden="true" name="进度统计"
+                class="com.joinsun.gaea.progressstatistics.ProgressStatisticsBundle"/>
+        <bundle id="tbmmonitor" name="盾构监测" class="com.joinsun.gaea.tbmmonitor.TbmMonitorBundle"/>
+        <bundle id="formationshow" name="组段信息" class="com.joinsun.gaea.formationshow.FormationShowBundle"/>
+        <bundle id="manuallyparameter" name="手动参数" class="com.joinsun.gaea.manuallyparameter.ManuallyParameterBundle"/>
+        <bundle id="limit" name="历史预警" class="com.joinsun.gaea.limit.LimitBundle"/>
+        <bundle id="report" name="数据报表" class="com.joinsun.gaea.report.ReportBundle"/>
+        <bundle id="equipmentfault" name="设备故障" class="com.joinsun.gaea.equipmentfault.EquipmentFaultBundle"/>
+    </group>
+</config>

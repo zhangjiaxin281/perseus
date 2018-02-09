@@ -1,0 +1,25 @@
+group 'com.joinsun'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+repositories {
+    mavenCentral()
+}
+configurations {
+    compile.exclude group: 'org.slf4j', module: 'slf4j-log4j12'
+    compile.exclude group: 'log4j', module: 'log4j'
+}
+dependencies {
+    compile('org.docx4j:docx4j:3.3.6')
+    compile('org.docx4j:docx4j-export-fo:3.3.6')
+    testCompile('junit:junit:4.12')
+}

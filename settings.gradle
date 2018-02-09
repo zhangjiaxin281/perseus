@@ -1,0 +1,5 @@
+rootProject.name = 'perseus'
+include 'perseus-common'
+include 'perseus-zeus'
+include 'perseus-admin'
+
